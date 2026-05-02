@@ -1,0 +1,7 @@
+fastapi==0.115.12
+groq==0.31.0
+python-dotenv==1.2.2
+uvicorn[standard]==0.34.2
+python-multipart==0.0.20
+pypdf==5.4.0
+python-docx==1.1.2
