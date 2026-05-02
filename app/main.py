@@ -1,5 +1,8 @@
+from dotenv import load_dotenv
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+
+load_dotenv()
 
 from app.ai_skill_extractor import extract_skills_hybrid
 from app.resume_parser import UnsupportedFileTypeError, extract_text_from_upload
