@@ -24,8 +24,14 @@ app.add_middleware(
 )
 
 
+@app.get("/")
+def root():
+    return {"message": "Resume API is running", "endpoints": ["/health", "/extract-skills", "/score-resume"]}
+
+
 @app.get("/health")
-def health() -> dict[str, str]:
+def health():
+    print("Health check called")
     return {"status": "ok"}
 
 
